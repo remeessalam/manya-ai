@@ -43,11 +43,12 @@ function Footer() {
                       <ItodoImage src="images/footer-logo.png" alt="#" />
                     </NavLink>
                   </div>
+
                   <p>
-                    Pellentesque in commodo elit. Nunc tincidun sapien eget
-                    condimentum. Vivamus aliquam sollicitudin purus. Quisque sem
-                    leo.
+                    Empowering your business with innovative technology
+                    solutions for growth and success.
                   </p>
+
                   <div className="widget_about-call-section">
                     <div className="sx-f-call-icon">
                       <i className="flaticon-telephone" />

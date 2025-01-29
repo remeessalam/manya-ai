@@ -1,6 +1,7 @@
 import { publicUrlFor } from "../../../../globals/constants";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { register } from "swiper/element/bundle";
+import { companyDetails } from "../../../../constant";
 register();
 
 function SectionSlider1() {
@@ -42,12 +43,13 @@ function SectionSlider1() {
                 </h2>
                 <div className="sx-bnr-1-info">
                   In today’s fast-evolving digital landscape, businesses need
-                  innovative and reliable solutions to stay ahead. At [Your
-                  Company Name], we offer a wide range of services that help you
-                  transform, scale, and optimize your operations. Whether you’re
-                  looking to develop a cutting- edge mobile app, create stunning
-                  web designs, or leverage the power of artificial intelligence,
-                  our team is here to bring your vision to life.
+                  innovative and reliable solutions to stay ahead. At{" "}
+                  {companyDetails.name}, we offer a wide range of services that
+                  help you transform, scale, and optimize your operations.
+                  Whether you’re looking to develop a cutting- edge mobile app,
+                  create stunning web designs, or leverage the power of
+                  artificial intelligence, our team is here to bring your vision
+                  to life.
                 </div>
                 <div className="sx-bnr-readmore">
                   <NavLink
@@ -59,12 +61,9 @@ function SectionSlider1() {
                   </NavLink>
                 </div>
                 <div className="sx-bnr-video">
-                  <a
-                    href="https://www.youtube.com/watch?v=c1XNqw2gSbU"
-                    className="mfp-video circle"
-                  >
+                  <Link to="#" className="mfp-video circle">
                     <i className="flaticon-play" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -89,15 +88,23 @@ function SectionSlider1() {
                   className="sx-bnr-1-small-title"
                   data-swiper-parallax="-300"
                 >
-                  We are The best
+                  Welcome to {companyDetails.name}
                 </span>
                 <h2 className="sx-bnr-1-large-title">
-                  We are ready To IT Solution Work.
+                  Innovative Solutions for a Digital-First World
                 </h2>
                 <div className="sx-bnr-1-info">
-                  Fusce lacinia elit odio, id pulvinar erat placerat vitae. Sed
-                  quis aliquet neque. Aenean placerat condimentum lorem non
-                  suscipit. Cras tellus tellus, fringilla eu sapien.
+                  At {companyDetails.name}, we specialize in delivering
+                  cutting-edge solutions that drive digital transformation for
+                  businesses of all sizes. From mobile apps to artificial
+                  intelligence, our team of experts is dedicated to helping you
+                  stay ahead of the curve and thrive in an increasingly digital
+                  world.
+                  <br />
+                  Whether you're a startup looking to create your first app or
+                  an enterprise aiming to modernize your infrastructure, we’ve
+                  got you covered. Here's how we can help you achieve your
+                  goals:
                 </div>
                 <div className="sx-bnr-readmore">
                   <NavLink
@@ -109,12 +116,9 @@ function SectionSlider1() {
                   </NavLink>
                 </div>
                 <div className="sx-bnr-video">
-                  <a
-                    href="https://www.youtube.com/watch?v=c1XNqw2gSbU"
-                    className="mfp-video circle"
-                  >
+                  <Link to="#" className="mfp-video circle">
                     <i className="flaticon-play" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
