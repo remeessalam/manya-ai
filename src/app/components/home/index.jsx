@@ -21,7 +21,7 @@ function Home1Page() {
       <SectionServices1 />
       <SectionAboutCompany1 />
       <SectionWhyChooseUs1 />
-      <SectionVideo1 />
+      {/* <SectionVideo1 /> */}
       {/* <SectionPricing1 /> */}
       <SectionClients1 />
       <SectionCaseStudy1 />

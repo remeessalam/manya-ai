@@ -2,6 +2,7 @@ import ItodoImage from "../../../elements/itodo-img";
 import { NavLink } from "react-router-dom";
 import SectionTestimonials1 from "./section-testimonials1";
 import { caseStudy } from "../../../../constant";
+import SectionTestimonials3 from "../index3/section-testimonials3";
 
 function SectionCaseStudy1() {
   return (
@@ -147,7 +148,8 @@ function SectionCaseStudy1() {
               </div> */}
             </div>
             {/*testimonial section */}
-            <SectionTestimonials1 />
+            {/* <SectionTestimonials1 /> */}
+            <SectionTestimonials3 />
           </div>
         </div>
       </div>
