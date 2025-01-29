@@ -61,7 +61,7 @@ function SectionCaseStudy1() {
                         <h2 className="sx-title sx-s-title">{obj.name}</h2>
                       </NavLink>
                       <div
-                        className="sx-s-title"
+                        className="sx-s"
                         style={{ color: "black", marginBottom: "15px" }}
                       >
                         {obj.description}
