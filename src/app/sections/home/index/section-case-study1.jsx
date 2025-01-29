@@ -1,6 +1,7 @@
 import ItodoImage from "../../../elements/itodo-img";
 import { NavLink } from "react-router-dom";
 import SectionTestimonials1 from "./section-testimonials1";
+import { caseStudy } from "../../../../constant";
 
 function SectionCaseStudy1() {
   return (
@@ -43,72 +44,45 @@ function SectionCaseStudy1() {
           </div>
           <div className="section-content">
             <div className="owl-carousel sx-case-st-carousel">
-              {/*One block*/}
-              <div className="item">
-                <div className="sx-case-study-bx sx-overlay-effect">
-                  <div className="sx-case-media sx-img-overlay">
-                    <NavLink to="/portfolio/detail">
-                      <ItodoImage src="images/case-study/pic-1.jpg" alt="" />
-                    </NavLink>
-                    <NavLink to="/portfolio/detail" className="sx-case-link">
-                      <i className="flaticon-up-right-arrow" />
-                    </NavLink>
-                  </div>
-                  <div className="sx-case-info">
-                    <div className="sx-s-title">Apps Design</div>
-                    <NavLink className="sx-l-title" to="/portfolio/detail">
-                      <h2 className="sx-title">
-                        IT Solution Business Mokup land
-                      </h2>
-                    </NavLink>
-                    <div className="sx-case-readmore">
-                      <NavLink
-                        to="/portfolio/detail"
-                        title="READ MORE"
-                        rel="bookmark"
-                        className="site-button icon"
-                      >
-                        <i className="fa  fa-long-arrow-right" />
-                        Read More
-                      </NavLink>
-                    </div>
-                  </div>
-                </div>
-              </div>
               {/*One two*/}
-              <div className="item">
-                <div className="sx-case-study-bx sx-overlay-effect">
-                  <div className="sx-case-media sx-img-overlay">
-                    <NavLink to="/portfolio/detail">
-                      <ItodoImage src="images/case-study/pic-2.jpg" alt="" />
-                    </NavLink>
-                    <NavLink to="/portfolio/detail" className="sx-case-link">
-                      <i className="flaticon-up-right-arrow" />
-                    </NavLink>
-                  </div>
-                  <div className="sx-case-info">
-                    <div className="sx-s-title">Branding Design</div>
-                    <NavLink className="sx-l-title" to="/portfolio/detail">
-                      <h2 className="sx-title">
-                        Visit Our planned modern farm
-                      </h2>
-                    </NavLink>
-                    <div className="sx-case-readmore">
-                      <NavLink
-                        to="/portfolio/detail"
-                        title="READ MORE"
-                        rel="bookmark"
-                        className="site-button icon"
-                      >
-                        <i className="fa  fa-long-arrow-right" />
-                        Read More
+              {caseStudy.map((obj) => (
+                <div className="item">
+                  <div className="sx-case-study-bx sx-overlay-effect">
+                    <div className="sx-case-media sx-img-overlay">
+                      <NavLink to={obj.link}>
+                        <img src={obj.image} alt="" />
                       </NavLink>
+                      <NavLink to={obj.link} className="sx-case-link">
+                        <i className="flaticon-up-right-arrow" />
+                      </NavLink>
+                    </div>
+                    <div className="sx-case-info">
+                      <NavLink className="sx-l-title" to={obj.link}>
+                        <h2 className="sx-title sx-s-title">{obj.name}</h2>
+                      </NavLink>
+                      <div
+                        className="sx-s-title"
+                        style={{ color: "black", marginBottom: "15px" }}
+                      >
+                        {obj.description}
+                      </div>
+                      <div className="sx-case-readmore">
+                        <NavLink
+                          to={obj.link}
+                          title="READ MORE"
+                          rel="bookmark"
+                          className="site-button icon"
+                        >
+                          <i className="fa  fa-long-arrow-right" />
+                          Visit
+                        </NavLink>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              ))}
               {/*One three*/}
-              <div className="item">
+              {/* <div className="item">
                 <div className="sx-case-study-bx sx-overlay-effect">
                   <div className="sx-case-media sx-img-overlay">
                     <NavLink to="/portfolio/detail">
@@ -138,9 +112,9 @@ function SectionCaseStudy1() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
               {/*One four*/}
-              <div className="item">
+              {/* <div className="item">
                 <div className="sx-case-study-bx sx-overlay-effect">
                   <div className="sx-case-media sx-img-overlay">
                     <NavLink to="/portfolio/detail">
@@ -170,7 +144,7 @@ function SectionCaseStudy1() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
             {/*testimonial section */}
             <SectionTestimonials1 />

@@ -1,4 +1,4 @@
-import whyChooseUs from "../../../../constant";
+import { whyChooseUs } from "../../../../constant";
 import { publicUrlFor } from "../../../../globals/constants";
 import { NavLink } from "react-router-dom";
 

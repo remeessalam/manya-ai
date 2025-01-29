@@ -15,6 +15,16 @@ import {
 } from "react-icons/fa";
 import { SiHiveBlockchain } from "react-icons/si";
 import { VscServerProcess } from "react-icons/vsc";
+//case study images
+import ghome from "./assets/web-development-portfoilo/5ghomes.png";
+import bayut from "./assets/web-development-portfoilo/bayut.png";
+import cold_creekcap from "./assets/web-development-portfoilo/cold creekcap.png";
+import emergency_music from "./assets/web-development-portfoilo/emergency music .png";
+import flatiorn from "./assets/web-development-portfoilo/flatiorn.png";
+import maven from "./assets/web-development-portfoilo/maven.png";
+import menissa_caterings from "./assets/web-development-portfoilo/menissa caterings.png";
+import methodist from "./assets/web-development-portfoilo/methodist.png";
+import think_reality from "./assets/web-development-portfoilo/think reality.png";
 export const companyDetails = {
   name: "MANYA AI",
   email: "surendhar@shreemanya.in",
@@ -315,7 +325,7 @@ export const allServices = [
   },
 ];
 
-const whyChooseUs = [
+export const whyChooseUs = [
   {
     id: 1,
     icon: <FaLightbulb />,
@@ -360,4 +370,152 @@ const whyChooseUs = [
   },
 ];
 
-export default whyChooseUs;
+export const caseStudy = [
+  {
+    id: 1,
+    image: ghome,
+    name: "5G Homes",
+    link: "https://5ghighspeedinternet.co",
+    description:
+      "5G Homes offers high-speed internet solutions to homes and businesses, ensuring reliable and fast connections.",
+  },
+  {
+    id: 2,
+    image: bayut,
+    name: "Bayut",
+    link: "https://www.bayut.com",
+    description:
+      "Bayut is a leading property portal, providing comprehensive listings for buying, renting, and selling properties in the UAE.",
+  },
+  {
+    id: 3,
+    image: cold_creekcap,
+    name: "Cold Creek Cap",
+    link: "https://www.coldcreekcap.com",
+    description:
+      "Cold Creek Cap is a premier cap manufacturer offering high-quality caps for outdoor and sports enthusiasts.",
+  },
+  {
+    id: 4,
+    image: emergency_music,
+    name: "Emergency Music Distribution",
+    link: "https://www.figma.com/proto/GwlIMQuIuFevhOEp8moALy/emergence-music-distribuBon?page-id=6298%3A7215&type=design&node-id=6298-7776&viewport=407%2C314%2C0.11&t=QCtz7M4USn6gI1CG-1&scaling=min-zoom",
+    description:
+      "Emergency Music Distribution provides an online platform for artists to distribute their music globally.",
+  },
+  {
+    id: 5,
+    image: flatiorn,
+    name: "Flatiorn",
+    link: "https://www.figma.com/design/syARcSBYKhwEzsEmlpB2jR/Crypto-UI-App-%26-Admin?node-id=0-1&t=qrubmjqZL7GxJUk2-0",
+    description:
+      "Flatiorn is an innovative cryptocurrency trading platform offering users easy access to digital assets and blockchain technology.",
+  },
+  {
+    id: 6,
+    image: maven,
+    name: "Maven",
+    link: "https://www.figma.com/design/ZoowfS1VMFLRKKcsdd3Myh/Potea-(Copy)?node-id=727-25421&t=KThAYD7OOdc4oeEV-1",
+    description:
+      "Maven is a project management tool designed to streamline communication and task tracking within teams.",
+  },
+  {
+    id: 7,
+    image: menissa_caterings,
+    name: "Menissa's Catering",
+    link: "https://messinascatering.com",
+    description:
+      "Menissa's Catering offers exceptional catering services for events of all sizes, delivering delicious food with impeccable service.",
+  },
+  {
+    id: 8,
+    image: methodist,
+    name: "Methodist Health",
+    link: "https://www.figma.com/design/Xtua9ElE5Eg7MV7baS6Bzn/TGFX-Workfile-(Copy)?t=JDLWFCCc24GDqh1T-0",
+    description:
+      "Methodist Health is dedicated to providing high-quality healthcare services and compassionate care to all patients.",
+  },
+  {
+    id: 9,
+    image: think_reality,
+    name: "Think Realty",
+    link: "https://thinkrealty.ae",
+    description:
+      "Think Realty is a real estate platform providing insights, news, and opportunities for real estate investors and homebuyers.",
+  },
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    clientSay:
+      "5G Homes provided us with an incredible solution that improved our internet speed and reliability. We highly recommend their services!",
+    clientName: "John Doe",
+    position: "CEO",
+    companyName: "5G Homes",
+  },
+  {
+    id: 2,
+    clientSay:
+      "Bayut has truly revolutionized the property market in the UAE. The platform is user-friendly and highly efficient.",
+    clientName: "Amina Shah",
+    position: "Founder & CEO",
+    companyName: "Bayut",
+  },
+  {
+    id: 3,
+    clientSay:
+      "Cold Creek Cap offers top-notch products. The quality of their caps is unmatched, and we’re proud to be working with them.",
+    clientName: "David White",
+    position: "Product Manager",
+    companyName: "Cold Creek Cap",
+  },
+  {
+    id: 4,
+    clientSay:
+      "Emergency Music Distribution has been a game-changer for our music business, allowing us to easily reach a global audience.",
+    clientName: "Sarah Lee",
+    position: "Marketing Director",
+    companyName: "Emergency Music Distribution",
+  },
+  {
+    id: 5,
+    clientSay:
+      "Flatiorn's user-friendly platform allowed us to seamlessly enter the cryptocurrency market with confidence.",
+    clientName: "Mohammed Ali",
+    position: "Founder & CEO",
+    companyName: "Flatiorn",
+  },
+  {
+    id: 6,
+    clientSay:
+      "Maven has significantly improved our team’s workflow and productivity. It's a powerful tool for project management.",
+    clientName: "Sophia Turner",
+    position: "Operations Manager",
+    companyName: "Maven",
+  },
+  {
+    id: 7,
+    clientSay:
+      "Menissa's Catering provided us with an exceptional experience. The food and service were flawless, and we couldn’t be happier.",
+    clientName: "Rebecca Hall",
+    position: "Event Planner",
+    companyName: "Menissa's Catering",
+  },
+  {
+    id: 8,
+    clientSay:
+      "Methodist Health has been instrumental in providing excellent care to our patients. Their professionalism is unparalleled.",
+    clientName: "Dr. William Carter",
+    position: "Chief Medical Officer",
+    companyName: "Methodist Health",
+  },
+  {
+    id: 9,
+    clientSay:
+      "Think Realty’s insights and real estate opportunities have helped us make informed investment decisions. A fantastic platform!",
+    clientName: "Lucas Green",
+    position: "Real Estate Investor",
+    companyName: "Think Realty",
+  },
+];
