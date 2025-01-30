@@ -25,7 +25,7 @@ function SectionSlider1() {
             class="sx-bnr-1-wrap swiper-slide overlay-overlay"
             style={{
               backgroundImage: `url(${publicUrlFor(
-                "images/main-slider/slider1/slide1.jpg"
+                "images/main-slider/slider1/slide2.jpg"
               )})`,
             }}
           >
@@ -61,9 +61,9 @@ function SectionSlider1() {
                   </NavLink>
                 </div>
                 <div className="sx-bnr-video">
-                  <Link to="#" className="mfp-video circle">
+                  <div className=" circle">
                     <i className="flaticon-play" />
-                  </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -73,7 +73,7 @@ function SectionSlider1() {
               </div>
             </div>
           </swiper-slide>
-          <swiper-slide
+          {/* <swiper-slide
             class="sx-bnr-1-wrap swiper-slide overlay-overlay"
             style={{
               backgroundImage: `url(${publicUrlFor(
@@ -127,7 +127,7 @@ function SectionSlider1() {
                 <h1 className="sx-title">Analytics</h1>
               </div>
             </div>
-          </swiper-slide>
+          </swiper-slide> */}
         </swiper-container>
         {/* !swiper slides */}
         {/* Add Arrows */}

@@ -7,23 +7,25 @@ import SectionClients2 from "../../../sections/home/index2/section-clients2";
 import { bannerData } from "../../../../globals/banner";
 import { useEffect } from "react";
 import { loadScript } from "../../../../globals/constants";
+import SectionServices1 from "../../../sections/home/index/section-services1";
 
 function ServicesPage() {
+  useEffect(() => {
+    loadScript("js/custom.js");
+  });
 
-    useEffect(()=>{
-        loadScript("js/custom.js")
-    })
+  return (
+    <>
+      <Banner _data={bannerData.services} />
+      <SectionServices1 />
 
-    return (
-        <>
-            <Banner _data={bannerData.services} />
-            <SectionWhyChooseUs1 />
-            <SectionAboutCompany1 />
-            <SectionVideo2 />
-            <SectionWhyChooseUs4 />
-            <SectionClients2 />
-        </>
-    )
+      <SectionWhyChooseUs1 />
+      <SectionAboutCompany1 />
+      {/* <SectionVideo2 /> */}
+      <SectionWhyChooseUs4 />
+      <SectionClients2 />
+    </>
+  );
 }
 
 export default ServicesPage;

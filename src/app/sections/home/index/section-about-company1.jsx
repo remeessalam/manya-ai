@@ -23,9 +23,9 @@ function SectionAboutCompany1() {
                       <div className="sx-ab-img-section-1-wrap">
                         <div className="sx-ab-video">
                           {/* https://www.youtube.com/watch?v=c1XNqw2gSbU */}
-                          <Link to="#" className="mfp-video circle">
+                          <div className=" circle">
                             <i className="flaticon-play" />
-                          </Link>
+                          </div>
                         </div>
                         <div
                           className="sx-ab-img-section-1"

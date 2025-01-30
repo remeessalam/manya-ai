@@ -19,39 +19,52 @@ import BlogDetailPage from "../app/components/IT blogs/blog-detail";
 import BlogDetailSidebarPage from "../app/components/IT blogs/blog-detail-sidebar";
 import ContactUsPage from "../app/components/contactus/contact-us";
 import Home1Page from "../app/components/home/index";
-import Home2Page from "../app/components/home/index2";
-import Home3Page from "../app/components/home/index3";
+import { Toaster } from "react-hot-toast";
+// import Home2Page from "../app/components/home/index2";
+// import Home3Page from "../app/components/home/index3";
 
 function AppRoutes() {
-    return (
-        <>
-            <Routes>
-                <Route path="/" element={<Home1Page />} />
-                <Route path="/index" element={<Home1Page />} />
+  return (
+    <>
+      <Toaster
+        position="top-center"
+        toastOptions={{
+          style: {
+            background: "#010C2A",
+            color: "#ffffff",
+          },
+        }}
+      />
+      <Routes>
+        <Route path="/" element={<Home1Page />} />
+        {/* <Route path="/index" element={<Home1Page />} />
                 <Route path="/index2" element={<Home2Page />} />
-                <Route path="/index3" element={<Home3Page />} />
-                <Route path="/about-us" element={<AboutUsPage />} />
-                <Route path="/faq" element={<FAQPage />} />
-                <Route path="/gallery" element={<GalleryPage />} />
-                <Route path="/icons" element={<IconsPage />} />
-                <Route path="/testimonials" element={<TestimonialsPage />} />
-                <Route path="/why-choose-us" element={<WhyChooseUsPage />} />
-                <Route path="/pricing" element={<PricingPage />} />
-                <Route path="/team" element={<TeamPage />} />
-                <Route path="/mission" element={<MissionVisionPage />} />
-                <Route path="/services" element={<ServicesPage />} />
-                <Route path="/services/detail" element={<ServicesDetailPage />} />
-                <Route path="/portfolio" element={<Portfolio1Page />} />
-                <Route path="/portfolio2" element={<Portfolio2Page />} />
-                <Route path="/portfolio/detail" element={<PortfolioDetailPage />} />
-                <Route path="/blogs" element={<BlogGridPage />} />
-                <Route path="/blogs/list" element={<BlogListSidebarPage />} />
-                <Route path="/blogs/detail-with-sidebar" element={<BlogDetailSidebarPage />} />
-                <Route path="/blogs/detail" element={<BlogDetailPage />} />
-                <Route path="/contact-us" element={<ContactUsPage />} />
-            </Routes>
-        </>
-    )
+                <Route path="/index3" element={<Home3Page />} /> */}
+        <Route path="/about-us" element={<AboutUsPage />} />
+        <Route path="/faq" element={<FAQPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/icons" element={<IconsPage />} />
+        <Route path="/testimonials" element={<TestimonialsPage />} />
+        <Route path="/why-choose-us" element={<WhyChooseUsPage />} />
+        <Route path="/pricing" element={<PricingPage />} />
+        <Route path="/team" element={<TeamPage />} />
+        <Route path="/mission" element={<MissionVisionPage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/services/detail" element={<ServicesDetailPage />} />
+        <Route path="/portfolio" element={<Portfolio1Page />} />
+        <Route path="/portfolio2" element={<Portfolio2Page />} />
+        <Route path="/portfolio/detail" element={<PortfolioDetailPage />} />
+        <Route path="/blogs" element={<BlogGridPage />} />
+        <Route path="/blogs/list" element={<BlogListSidebarPage />} />
+        <Route
+          path="/blogs/detail-with-sidebar"
+          element={<BlogDetailSidebarPage />}
+        />
+        <Route path="/blogs/detail" element={<BlogDetailPage />} />
+        <Route path="/contact-us" element={<ContactUsPage />} />
+      </Routes>
+    </>
+  );
 }
 
 export default AppRoutes;

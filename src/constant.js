@@ -28,7 +28,8 @@ import think_reality from "./assets/web-development-portfoilo/think reality.png"
 export const companyDetails = {
   name: "MANYA AI",
   email: "surendhar@shreemanya.in",
-  phone1: "+91-8300609627",
+  phone1: "+91-7411331718",
+  phone3: "+91-8300609627",
   phone2: "+91-9345361250.",
   address: "address",
   //   address: `Mr. Thirumavalavan Janaki Raman.

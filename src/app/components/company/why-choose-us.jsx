@@ -9,21 +9,20 @@ import { useEffect } from "react";
 import { loadScript } from "../../../globals/constants";
 
 function WhyChooseUsPage() {
+  useEffect(() => {
+    loadScript("js/custom.js");
+  });
 
-    useEffect(()=>{
-        loadScript("js/custom.js")
-    })
-
-    return (
-        <>
-            <Banner _data={bannerData.whychooseus} />
-            <SectionServices1 />
-            <SectionAboutCompany3 />
-            <SectionVideo1 />
-            <SectionWhyChooseUs1 />
-            <SectionTeam1 />
-        </>
-    )
+  return (
+    <>
+      <Banner _data={bannerData.whychooseus} />
+      <SectionServices1 />
+      <SectionAboutCompany3 />
+      {/* <SectionVideo1 /> */}
+      <SectionWhyChooseUs1 />
+      <SectionTeam1 />
+    </>
+  );
 }
 
 export default WhyChooseUsPage;
