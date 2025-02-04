@@ -146,7 +146,7 @@ function Footer() {
                   <ul>
                     <li>
                       <div className="sx-f-insta">
-                        <NavLink to="/gallery">
+                        <NavLink to="#">
                           <ItodoImage src="images/f-insta/pic1.jpg" alt="#" />
                           <i className="feather-instagram" />
                         </NavLink>
@@ -154,7 +154,7 @@ function Footer() {
                     </li>
                     <li>
                       <div className="sx-f-insta">
-                        <NavLink to="/gallery">
+                        <NavLink to="#">
                           <ItodoImage src="images/f-insta/pic2.jpg" alt="#" />
                           <i className="feather-instagram" />
                         </NavLink>
@@ -162,7 +162,7 @@ function Footer() {
                     </li>
                     <li>
                       <div className="sx-f-insta">
-                        <NavLink to="/gallery">
+                        <NavLink to="#">
                           <ItodoImage src="images/f-insta/pic3.jpg" alt="#" />
                           <i className="feather-instagram" />
                         </NavLink>
@@ -170,7 +170,7 @@ function Footer() {
                     </li>
                     <li>
                       <div className="sx-f-insta">
-                        <NavLink to="/gallery">
+                        <NavLink to="#">
                           <ItodoImage src="images/f-insta/pic4.jpg" alt="#" />
                           <i className="feather-instagram" />
                         </NavLink>
@@ -178,7 +178,7 @@ function Footer() {
                     </li>
                     <li>
                       <div className="sx-f-insta">
-                        <NavLink to="/gallery">
+                        <NavLink to="#">
                           <ItodoImage src="images/f-insta/pic5.jpg" alt="#" />
                           <i className="feather-instagram" />
                         </NavLink>
@@ -186,7 +186,7 @@ function Footer() {
                     </li>
                     <li>
                       <div className="sx-f-insta">
-                        <NavLink to="/gallery">
+                        <NavLink to="#">
                           <ItodoImage src="images/f-insta/pic6.jpg" alt="#" />
                           <i className="feather-instagram" />
                         </NavLink>
