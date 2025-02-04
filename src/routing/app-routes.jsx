@@ -50,7 +50,7 @@ function AppRoutes() {
         <Route path="/team" element={<TeamPage />} />
         <Route path="/mission" element={<MissionVisionPage />} />
         <Route path="/services" element={<ServicesPage />} />
-        <Route path="/services/detail" element={<ServicesDetailPage />} />
+        <Route path="/services/:service" element={<ServicesDetailPage />} />
         <Route path="/portfolio" element={<Portfolio1Page />} />
         <Route path="/portfolio2" element={<Portfolio2Page />} />
         <Route path="/portfolio/detail" element={<PortfolioDetailPage />} />

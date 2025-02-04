@@ -224,9 +224,9 @@ function Header1() {
                       <li>
                         <NavLink to="/portfolio">Portfolio</NavLink>
                       </li>
-                      <li>
+                      {/* <li>
                         <NavLink to="/portfolio2">Portfolio-2</NavLink>
-                      </li>
+                      </li> */}
                       <li>
                         <NavLink to="/portfolio/detail">
                           Portfolio Detail

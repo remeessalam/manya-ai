@@ -4,14 +4,24 @@ import {
   FaCloudUploadAlt,
   FaCode,
   FaCogs,
+  FaComments,
+  FaDatabase,
+  FaDesktop,
   FaGamepad,
   FaHandsHelping,
   FaLightbulb,
   FaMobile,
   FaPaintBrush,
+  FaPalette,
+  FaRegCommentDots,
   FaRobot,
+  FaServer,
   FaShieldAlt,
+  FaShoppingCart,
+  FaTabletAlt,
+  FaTools,
   FaUserCheck,
+  FaUserFriends,
 } from "react-icons/fa";
 import { SiHiveBlockchain } from "react-icons/si";
 import { VscServerProcess } from "react-icons/vsc";
@@ -25,6 +35,14 @@ import maven from "./assets/web-development-portfoilo/maven.png";
 import menissa_caterings from "./assets/web-development-portfoilo/menissa caterings.png";
 import methodist from "./assets/web-development-portfoilo/methodist.png";
 import think_reality from "./assets/web-development-portfoilo/think reality.png";
+import appDevelopment from "./assets/services/service-detail-app.jpg";
+import uiuxdevelopment from "./assets/services/service-detail-uiux.jpg";
+import webdevelopment from "./assets/services/service-detail-web.jpg";
+import clouddevelopment from "./assets/services/service-detail-cloud.jpg";
+import aidevelopment from "./assets/services/service-details-ai.jpg";
+import migrationdevelopment from "./assets/services/service-details-migration.jpg";
+import { FaMobileAlt, FaSyncAlt } from "react-icons/fa"; // Import React Icons
+
 export const companyDetails = {
   name: "MANYA AI",
   email: "surendhar@shreemanya.in",
@@ -40,6 +58,7 @@ export const companyDetails = {
 export const allServices = [
   {
     id: 1,
+    link: "app-development",
     title: "App Development",
     description:
       "Custom mobile apps for iOS, Android, and cross-platform solutions, optimized for performance, security, and user engagement.",
@@ -67,6 +86,7 @@ export const allServices = [
   {
     id: 2,
     title: "UI/UX Design",
+    link: "uiux-design",
     description:
       "Intuitive, responsive, and visually stunning designs that ensure seamless and engaging user experiences.",
     content:
@@ -93,6 +113,7 @@ export const allServices = [
   {
     id: 3,
     title: "Web Development",
+    link: "web-development",
     description:
       "Custom websites and e-commerce platforms designed for speed, security, and measurable business results.",
     content:
@@ -119,6 +140,7 @@ export const allServices = [
   {
     id: 4,
     title: "Cloud Computing Services",
+    link: "cloud-computing-services",
     description:
       "Scalable, secure, and cost-effective cloud solutions for infrastructure, data storage, and disaster recovery.",
     content:
@@ -145,6 +167,7 @@ export const allServices = [
   {
     id: 5,
     title: "Artificial Intelligence Services",
+    link: "artificial-intelligence-services",
     description:
       "AI solutions for automation, machine learning, chatbots, and natural language processing to drive business growth.",
     content:
@@ -171,6 +194,7 @@ export const allServices = [
   {
     id: 6,
     title: "Cloud Migration Services",
+    link: "cloud-migration-services",
     description:
       "Seamless and secure migration of data, applications, and systems to the cloud with minimal disruption.",
     content:
@@ -191,136 +215,6 @@ export const allServices = [
         heading: "Post-Migration Support",
         description:
           "After migration, we provide ongoing support to monitor performance, optimize cloud resources, and ensure your cloud infrastructure is running at its best.",
-      },
-    ],
-  },
-  {
-    id: 7,
-    title: "Game Development",
-    description:
-      "Develop high-quality, engaging games for mobile, desktop, and console platforms.",
-    content:
-      "Our game development team creates immersive and interactive experiences for players across multiple platforms. Whether it's mobile games, PC games, or console games, we deliver engaging gameplay with stunning graphics and optimized performance.",
-    icon: <FaGamepad />,
-    points: [
-      {
-        heading: "Mobile Game Development",
-        description:
-          "We specialize in developing mobile games that engage users and are optimized for iOS and Android devices.",
-      },
-      {
-        heading: "Console & PC Games",
-        description:
-          "From concept to launch, we develop games for console and PC platforms with attention to performance, quality, and user experience.",
-      },
-      {
-        heading: "Game Maintenance & Updates",
-        description:
-          "We provide ongoing support, updates, and improvements to ensure your game stays relevant and performs at its best.",
-      },
-    ],
-  },
-  {
-    id: 8,
-    title: "Robotic Process Automation",
-    description:
-      "Automate repetitive tasks and workflows to boost productivity and reduce errors.",
-    content:
-      "Our RPA solutions automate manual, repetitive tasks, enabling your business to streamline operations and reduce human error. From automating customer support to back-office processes, we can help you save time and costs.",
-    icon: <FaRobot />,
-    points: [
-      {
-        heading: "Business Process Automation",
-        description:
-          "Automate key business processes to improve efficiency and reduce costs.",
-      },
-      {
-        heading: "Customer Support Automation",
-        description:
-          "Use RPA to streamline and automate customer support functions, improving response times and satisfaction.",
-      },
-      {
-        heading: "Data Entry Automation",
-        description:
-          "Automate data entry tasks to reduce human error and speed up workflows.",
-      },
-    ],
-  },
-  {
-    id: 9,
-    title: "Blockchain Development",
-    description:
-      "Create secure, decentralized applications and platforms using blockchain technology.",
-    content:
-      "Blockchain technology can transform your business by enabling secure, transparent, and decentralized systems. We offer blockchain development services to create custom solutions, smart contracts, decentralized applications (dApps), and cryptocurrency solutions.",
-    icon: <SiHiveBlockchain />,
-    points: [
-      {
-        heading: "Custom Blockchain Solutions",
-        description:
-          "Build decentralized, secure blockchain-based applications tailored to your needs.",
-      },
-      {
-        heading: "Smart Contracts",
-        description:
-          "Implement self-executing contracts that automatically enforce the terms of an agreement.",
-      },
-      {
-        heading: "Cryptocurrency Solutions",
-        description:
-          "Create digital currencies and secure wallets for safe transactions.",
-      },
-    ],
-  },
-  {
-    id: 10,
-    title: "Data Science Services",
-    description:
-      "Analyze and visualize data to make informed decisions and drive business insights.",
-    content:
-      "Our data science services help you unlock the value of your data. From predictive analytics to data visualizations, we help you make data-driven decisions that will accelerate your business growth.",
-    icon: <FaChartLine />,
-    points: [
-      {
-        heading: "Data Analytics & Visualization",
-        description:
-          "Use advanced analytics to transform data into actionable insights that drive growth.",
-      },
-      {
-        heading: "Predictive Analytics",
-        description:
-          "Leverage historical data to predict trends and make better decisions.",
-      },
-      {
-        heading: "Custom Data Science Solutions",
-        description:
-          "Develop tailored data science models to address your unique business needs.",
-      },
-    ],
-  },
-  {
-    id: 11,
-    title: "Natural Language Processing (NLP) Services",
-    description:
-      "Harness the power of NLP to analyze and understand human language, enabling smarter interactions and automation.",
-    content:
-      "Natural Language Processing (NLP) helps computers understand, interpret, and generate human language. Our NLP services provide solutions that enhance user experiences by enabling machines to understand text, speech, and sentiment. Whether it’s for chatbots, content categorization, or sentiment analysis, our NLP solutions are tailored to fit your business needs.",
-    icon: <VscServerProcess />,
-    points: [
-      {
-        heading: "Text Analytics & Sentiment Analysis",
-        description:
-          "Analyze customer feedback, social media posts, and other text-based data to understand sentiment and improve decision-making.",
-      },
-      {
-        heading: "Chatbots & Virtual Assistants",
-        description:
-          "Leverage NLP to create intelligent chatbots and virtual assistants that understand and respond to natural language queries.",
-      },
-      {
-        heading: "Speech Recognition & Processing",
-        description:
-          "Convert speech into text and enable voice commands for smarter applications and enhanced user experiences.",
       },
     ],
   },
@@ -518,5 +412,208 @@ export const testimonials = [
     clientName: "Lucas Green",
     position: "Real Estate Investor",
     companyName: "Think Realty",
+  },
+];
+
+export const detailService = [
+  {
+    id: 1,
+    link: "app-development",
+    title: "App Development",
+    image: appDevelopment,
+    sectionTitle: "Why Choose Us",
+    sectionSubtitle:
+      "Custom mobile apps for iOS, Android, and cross-platform solutions, optimized for performance, security, and user engagement.",
+    sectionContent: [
+      "In today’s mobile-first world, your business needs more than just an app – you need a solution that resonates with your users and enhances their experience. At MANYA AI, we specialize in developing high-performance mobile apps that are intuitive, feature-rich, and scalable. Whether you need a native mobile app for iOS or Android, or a cross-platform app that works seamlessly across all devices, we ensure your app is optimized for performance, security, and user engagement.",
+      "Our mobile app development services include custom-built solutions tailored to your business needs. From concept to deployment, we work closely with you to ensure your app is a success, delivering a seamless and engaging user experience across all platforms.",
+    ],
+    icons: [
+      {
+        iconClass: <FaMobileAlt />, // React Icon for Mobile
+        title: "Native Mobile Apps",
+        subtitle: "Seamless user experience on iOS & Android.",
+      },
+      {
+        iconClass: <FaCode />, // React Icon for Cross-Platform
+        title: "Cross-Platform Development",
+        subtitle: "React Native & Flutter solutions.",
+      },
+      {
+        iconClass: <FaSyncAlt />, // React Icon for Maintenance & Updates
+        title: "App Maintenance & Updates",
+        subtitle: "Regular maintenance & bug fixes.",
+      },
+    ],
+
+    additionalContent:
+      "We offer continuous support to ensure that your mobile app stays updated and fully optimized. Whether it's adding new features, fixing bugs, or ensuring compatibility with the latest OS updates, we are here to ensure your app always performs at its best.",
+  },
+  {
+    id: 2,
+    title: "UI/UX Design",
+    link: "uiux-design",
+    image: uiuxdevelopment,
+
+    sectionTitle: "Why Choose Us",
+    sectionSubtitle:
+      "Designing experiences that connect with users and drive engagement.",
+    sectionContent: [
+      "Great design is more than aesthetics; it's about usability, accessibility, and emotional impact. We create user experiences that are not just visually appealing but also intuitive and efficient, ensuring that your digital product meets business goals while delighting users.",
+      "Our design process is research-driven, focusing on understanding user behaviors and needs. Through prototyping and testing, we refine every interaction to create seamless and enjoyable experiences across all touchpoints.",
+    ],
+    icons: [
+      {
+        iconClass: <FaUserFriends />,
+        title: "Human-Centered Approach",
+        subtitle: "User Experience",
+      },
+      {
+        iconClass: <FaPalette />,
+        title: "Prototyping & Testing",
+        subtitle: "UX Strategy",
+      },
+      {
+        iconClass: <FaTabletAlt />,
+        title: "Responsive Design",
+        subtitle: "Cross-Platform Compatibility",
+      },
+    ],
+
+    additionalContent:
+      "By leveraging the latest design principles and technologies, we ensure that your product not only looks exceptional but also offers an engaging and seamless user journey. Whether it's a website, mobile app, or enterprise software, our UI/UX designs elevate your brand’s digital presence.",
+  },
+  {
+    id: 3,
+    title: "Web Development",
+    link: "web-development",
+    sectionTitle: "Why Choose Us",
+    image: webdevelopment,
+
+    sectionSubtitle:
+      "Building digital experiences that drive engagement and business growth.",
+    sectionContent: [
+      "A well-designed website is more than just an online presence; it’s a powerful tool that enhances your brand identity, attracts visitors, and converts them into customers. We create web solutions that are tailored to your needs, ensuring speed, security, and user-friendliness.",
+      "With our expertise in modern web technologies and frameworks, we build highly functional websites that are visually appealing, responsive, and optimized for performance. Our development approach ensures seamless user experiences across all devices.",
+    ],
+    icons: [
+      {
+        iconClass: <FaDesktop />, // React Icon for Custom Development
+        title: "Custom Development",
+        subtitle: "Unique & Scalable Solutions",
+      },
+      {
+        iconClass: <FaShoppingCart />, // React Icon for E-Commerce Platforms
+        title: "E-Commerce Platforms",
+        subtitle: "Boost Online Sales",
+      },
+      {
+        iconClass: <FaCogs />, // React Icon for CMS Integration
+        title: "CMS Integration",
+        subtitle: "Easy Content Management",
+      },
+    ],
+
+    additionalContent:
+      "Our team follows industry best practices and the latest development trends to ensure that your website is future-proof. Whether you need a corporate website, an e-commerce store, or a web application, we deliver solutions that help your business thrive in the digital world.",
+  },
+  {
+    id: 4,
+    title: "Cloud Computing Services",
+    link: "cloud-computing-services",
+    sectionTitle: "Why Choose Us",
+    image: clouddevelopment,
+
+    sectionSubtitle:
+      "Empowering businesses with secure, scalable, and cost-effective cloud solutions.",
+    sectionContent: [
+      "In today’s digital world, cloud computing is essential for businesses looking to scale, innovate, and improve efficiency. We offer customized cloud solutions that align with your business objectives, providing security, flexibility, and cost-effectiveness.",
+      "Our cloud solutions cover everything from infrastructure setup to data storage and disaster recovery. We help businesses transition to the cloud seamlessly, ensuring optimal performance and security at every stage.",
+    ],
+    icons: [
+      {
+        iconClass: <FaCloud />, // React Icon for Cloud Infrastructure
+        title: "Cloud Infrastructure",
+        subtitle: "Scalable & Reliable",
+      },
+      {
+        iconClass: <FaDatabase />, // React Icon for Secure Storage
+        title: "Secure Storage",
+        subtitle: "Data Protection & Backup",
+      },
+      {
+        iconClass: <FaShieldAlt />, // React Icon for Disaster Recovery
+        title: "Disaster Recovery",
+        subtitle: "Business Continuity",
+      },
+    ],
+    additionalContent:
+      "With our expertise in cloud platforms like AWS, Azure, and Google Cloud, we help businesses leverage the power of the cloud to optimize operations, reduce costs, and improve agility. Whether you need cloud migration, security enhancements, or backup solutions, we provide end-to-end support to keep your business running smoothly.",
+  },
+  {
+    id: 5,
+    title: "Artificial Intelligence Services",
+    link: "artificial-intelligence-services",
+    sectionTitle: "Why Choose Us",
+    image: aidevelopment,
+
+    sectionSubtitle:
+      "Transforming businesses with cutting-edge AI solutions for automation and intelligence.",
+    sectionContent: [
+      "AI is reshaping the way businesses operate by automating tasks, improving decision-making, and enhancing customer experiences. We provide tailored AI solutions that integrate seamlessly into your existing infrastructure, ensuring tangible business impact.",
+      "Whether you need advanced analytics, intelligent automation, or AI-powered customer interactions, our expertise in AI technologies like machine learning and NLP enables us to develop solutions that drive efficiency and growth.",
+    ],
+    icons: [
+      {
+        iconClass: <FaRobot />, // React Icon for Machine Learning
+        title: "Machine Learning",
+        subtitle: "Data-Driven Insights",
+      },
+      {
+        iconClass: <FaComments />, // React Icon for AI Chatbots
+        title: "AI Chatbots",
+        subtitle: "Enhanced Customer Engagement",
+      },
+      {
+        iconClass: <FaRegCommentDots />, // React Icon for NLP Solutions
+        title: "NLP Solutions",
+        subtitle: "Smart Automation",
+      },
+    ],
+    additionalContent:
+      "By leveraging AI technologies, businesses can unlock new possibilities for automation, predictive analysis, and customer engagement. We specialize in building AI-driven solutions that enhance efficiency, optimize operations, and provide a competitive edge in the digital landscape.",
+  },
+  {
+    id: 6,
+    title: "Cloud Migration Services",
+    link: "cloud-migration-services",
+    sectionTitle: "Why Choose Us",
+    image: migrationdevelopment,
+
+    sectionSubtitle:
+      "Effortless and secure cloud migration solutions tailored to your business needs.",
+    sectionContent: [
+      "Moving to the cloud is a critical step for businesses seeking flexibility, scalability, and efficiency. Our cloud migration services ensure a seamless transition, minimizing risks and maximizing operational benefits.",
+      "We offer end-to-end cloud migration solutions, from readiness assessment to data transfer and post-migration support, ensuring your cloud environment is optimized for success.",
+    ],
+    icons: [
+      {
+        iconClass: <FaCloud />,
+        title: "Cloud Readiness",
+        subtitle: "Strategic Assessment",
+      },
+      {
+        iconClass: <FaServer />,
+        title: "Secure Migration",
+        subtitle: "Data & Application Transfer",
+      },
+      {
+        iconClass: <FaTools />,
+        title: "Ongoing Support",
+        subtitle: "Optimization & Monitoring",
+      },
+    ],
+    additionalContent:
+      "We work with top cloud providers like AWS, Azure, and Google Cloud to ensure a smooth migration process. Our team of experts helps businesses transition to the cloud with minimal downtime, improved security, and enhanced performance, making digital transformation effortless and efficient.",
   },
 ];

@@ -39,7 +39,7 @@ function SectionServices1() {
                           <p>{obj.description}</p>
                           <div className="sx-center-btn">
                             <NavLink
-                              to="/services/detail"
+                              to={`/services/${obj.link}`}
                               className="site-button-circle"
                             >
                               <i className="fa fa-long-arrow-right" />

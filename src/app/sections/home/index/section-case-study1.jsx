@@ -47,7 +47,7 @@ function SectionCaseStudy1() {
             <div className="owl-carousel sx-case-st-carousel">
               {/*One two*/}
               {caseStudy.map((obj) => (
-                <div className="item">
+                <div key={obj.id} className="item">
                   <div className="sx-case-study-bx sx-overlay-effect">
                     <div className="sx-case-media sx-img-overlay">
                       <NavLink to={obj.link}>
