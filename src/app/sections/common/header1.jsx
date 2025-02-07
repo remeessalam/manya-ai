@@ -210,8 +210,8 @@ function Header1() {
                     </ul> */}
                   </li>
                   <li>
-                    <NavLink to="/mission">IT Solutions</NavLink>
-                    <ul className="sub-menu">
+                    <NavLink to="/services">IT Solutions</NavLink>
+                    {/* <ul className="sub-menu">
                       <li>
                         <NavLink to="/mission">Mission &amp; Vision</NavLink>
                       </li>
@@ -224,17 +224,15 @@ function Header1() {
                       <li>
                         <NavLink to="/portfolio">Portfolio</NavLink>
                       </li>
-                      {/* <li>
-                        <NavLink to="/portfolio2">Portfolio-2</NavLink>
-                      </li> */}
+                   
                       <li>
                         <NavLink to="/portfolio/detail">
                           Portfolio Detail
                         </NavLink>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
-                  <li>
+                  {/* <li>
                     <NavLink to="/blogs">IT Blogs</NavLink>
                     <ul className="sub-menu">
                       <li>
@@ -252,7 +250,7 @@ function Header1() {
                         <NavLink to="/blogs/detail">Blog Detail</NavLink>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                   <li>
                     <NavLink to="/contact-us">Contact Us</NavLink>
                   </li>

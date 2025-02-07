@@ -45,7 +45,7 @@ import { FaMobileAlt, FaSyncAlt } from "react-icons/fa"; // Import React Icons
 
 export const companyDetails = {
   name: "MANYA AI",
-  email: "surendhar@shreemanya.in",
+  email: "sales@manya.ai",
   phone1: "+91-7411331718",
   phone3: "+91-8300609627",
   phone2: "+91-9345361250.",
