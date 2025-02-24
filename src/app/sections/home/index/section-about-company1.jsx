@@ -33,6 +33,9 @@ function SectionAboutCompany1() {
                             backgroundImage: `url(${publicUrlFor(
                               "images/about/left-pic.png"
                             )})`,
+                            objectFit: "cover !important",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "bottom",
                           }}
                         />
                       </div>

@@ -85,6 +85,9 @@ function SectionOurInfo1() {
                       backgroundImage: `url(${publicUrlFor(
                         "images/about/right-pic.png"
                       )})`,
+                      // backgroundRepeat: "no-repeat",
+                      // backgroundPosition: "center",
+                      backgroundSize: "auto",
                     }}
                   />
                 </div>

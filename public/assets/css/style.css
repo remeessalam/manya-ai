@@ -6417,7 +6417,7 @@ ol.commentlist li::after {
   vertical-align: top;
   position: relative;
   z-index: 2;
-  opacity: 0.2;
+  opacity: 0.8;
 }
 
 .client-logo-pic div {
@@ -10078,7 +10078,7 @@ New Template Css Start
 }
 .sx-mv-img-section-1 {
   width: 70px;
-  height: 410px;
+  height: 390px;
   border-radius: 10px;
   background-size: 100%;
   background-position: center;

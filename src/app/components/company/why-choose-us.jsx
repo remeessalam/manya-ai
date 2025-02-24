@@ -20,7 +20,7 @@ function WhyChooseUsPage() {
       <SectionAboutCompany3 />
       {/* <SectionVideo1 /> */}
       <SectionWhyChooseUs1 />
-      <SectionTeam1 />
+      {/* <SectionTeam1 /> */}
     </>
   );
 }

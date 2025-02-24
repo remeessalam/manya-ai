@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import ItodoImage from "../../elements/itodo-img";
 import { useState } from "react";
 import { loadScript } from "../../../globals/constants";
@@ -11,11 +11,11 @@ function Header1() {
   function toggleNavClass() {
     setIsActive(!isActive);
   }
-
+  const { pathname } = useLocation();
   useEffect(() => {
     loadScript("js/mobilenav.js");
   });
-
+  console.log(pathname, "asdjfkjasd");
   return (
     <>
       <header
@@ -166,7 +166,7 @@ function Header1() {
               {/* MAIN NAVIGATION */}
               <div className="header-nav navbar-collapse collapse d-flex justify-content-center collapse ">
                 <ul className=" nav navbar-nav ">
-                  <li className="active">
+                  <li className={`${pathname === "/" && `active`}`}>
                     <NavLink to="/">Home</NavLink>
                     {/* <ul className="sub-menu">
                       <li>
@@ -180,7 +180,9 @@ function Header1() {
                       </li>
                     </ul> */}
                   </li>
-                  <li>
+                  <li
+                    className={`${pathname === "/why-choose-us" && `active`}`}
+                  >
                     <NavLink to="/why-choose-us">Company</NavLink>
                     {/* <ul className="sub-menu">
                       <li>
@@ -209,7 +211,7 @@ function Header1() {
                       </li>
                     </ul> */}
                   </li>
-                  <li>
+                  <li className={`${pathname === "/services" && `active`}`}>
                     <NavLink to="/services">IT Solutions</NavLink>
                     {/* <ul className="sub-menu">
                       <li>
@@ -251,7 +253,7 @@ function Header1() {
                       </li>
                     </ul>
                   </li> */}
-                  <li>
+                  <li className={`${pathname === "/contact-us" && `active`}`}>
                     <NavLink to="/contact-us">Contact Us</NavLink>
                   </li>
                 </ul>
