@@ -25,92 +25,100 @@ function Header1() {
         }
       >
         <div className="top-bar">
-          <div className="container">
-            <div className="d-flex justify-content-between  align-content-center">
-              <div className="sx-topbar-left">
-                <ul className="e-p-bx">
-                  <li>{companyDetails.email}</li>
-                  <li>
-                    <a href="tel:(1)245-45678">{companyDetails.phone1}</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="sx-topbar-right">
-                <div className="top-bar-nav">
-                  <ul>
+          {pathname === "/" && (
+            <div className="container">
+              <div className="d-flex justify-content-between  align-content-center">
+                <div className="sx-topbar-left">
+                  <ul className="e-p-bx">
+                    <li>{companyDetails.email}</li>
                     <li>
-                      <NavLink to="/about-us">Terms &amp; Condition</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/faq">Privacy Policy</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/contact-us">Contact Us</NavLink>
+                      <a href="tel:(1)245-45678">{companyDetails.phone1}</a>
                     </li>
                   </ul>
                 </div>
-                <div className="sx-language-dd dropdown">
-                  <div className="sl-nav-1">
-                    <div className="sx-language-first sx-title" id="FR">
-                      <b>FR</b>
-                    </div>
-                    <button
-                      className="sl-nav-1-btn dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      En
-                    </button>
-                    <ul
-                      className="dropdown-menu"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
+                <div className="sx-topbar-right">
+                  <div className="top-bar-nav">
+                    <ul>
                       <li>
-                        <div className="sl-flag">
-                          <div className="c-name">
-                            <ItodoImage
-                              src="images/flag/germany.png"
-                              alt="alt"
-                            />
-                          </div>
-                        </div>
-                        <span className="active">Germany</span>
+                        <NavLink to="/about-us">Terms &amp; Condition</NavLink>
                       </li>
                       <li>
-                        <div className="sl-flag">
-                          <div className="c-name">
-                            <ItodoImage src="images/flag/italy.png" alt="alt" />
-                          </div>
-                        </div>
-                        <span className="active">Italy</span>
+                        <NavLink to="/faq">Privacy Policy</NavLink>
                       </li>
                       <li>
-                        <div className="sl-flag">
-                          <div className="c-name">
-                            <ItodoImage src="images/flag/spain.png" alt="alt" />
-                          </div>
-                        </div>
-                        <span className="active">Spain</span>
-                      </li>
-                      <li>
-                        <div className="sl-flag">
-                          <div className="c-name">
-                            <ItodoImage
-                              src="images/flag/united-states.png"
-                              alt="alt"
-                            />
-                          </div>
-                        </div>
-                        <span className="active">USA</span>
+                        <NavLink to="/contact-us">Contact Us</NavLink>
                       </li>
                     </ul>
+                  </div>
+                  <div className="sx-language-dd dropdown">
+                    <div className="sl-nav-1">
+                      <div className="sx-language-first sx-title" id="FR">
+                        <b>FR</b>
+                      </div>
+                      <button
+                        className="sl-nav-1-btn dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        En
+                      </button>
+                      <ul
+                        className="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <div className="sl-flag">
+                            <div className="c-name">
+                              <ItodoImage
+                                src="images/flag/germany.png"
+                                alt="alt"
+                              />
+                            </div>
+                          </div>
+                          <span className="active">Germany</span>
+                        </li>
+                        <li>
+                          <div className="sl-flag">
+                            <div className="c-name">
+                              <ItodoImage
+                                src="images/flag/italy.png"
+                                alt="alt"
+                              />
+                            </div>
+                          </div>
+                          <span className="active">Italy</span>
+                        </li>
+                        <li>
+                          <div className="sl-flag">
+                            <div className="c-name">
+                              <ItodoImage
+                                src="images/flag/spain.png"
+                                alt="alt"
+                              />
+                            </div>
+                          </div>
+                          <span className="active">Spain</span>
+                        </li>
+                        <li>
+                          <div className="sl-flag">
+                            <div className="c-name">
+                              <ItodoImage
+                                src="images/flag/united-states.png"
+                                alt="alt"
+                              />
+                            </div>
+                          </div>
+                          <span className="active">USA</span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
         <div className="sticky-header main-bar-wraper navbar-expand-lg">
           <div className="main-bar">

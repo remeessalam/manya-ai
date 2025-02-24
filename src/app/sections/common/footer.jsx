@@ -39,8 +39,13 @@ function Footer() {
               <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div className="widget widget_about">
                   <div className="logo-footer clearfix p-b15">
-                    <NavLink to="/index" className="sx-text-primary">
-                      <ItodoImage src="images/footer-logo.png" alt="#" />
+                    <NavLink
+                      to="/index"
+                      className="sx-text-primary"
+                      style={{ backgroundColor: "white" }}
+                    >
+                      {/* <ItodoImage src="images/footer-logo.png" alt="#" /> */}
+                      <ItodoImage src="images/Logo.png" alt="#" />
                     </NavLink>
                   </div>
 
@@ -68,23 +73,23 @@ function Footer() {
                     <li>
                       <NavLink to="/services">Our Services</NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                       <NavLink to="/team">Meet Our Team</NavLink>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                       <NavLink to="/portfolio">Our Portfolio</NavLink>
-                    </li>
+                    </li> */}
                     <li>
-                      <NavLink to="/contact-us">Contact</NavLink>
+                      <NavLink to="/contact-us">Contact Us</NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                       <NavLink to="/blogs">News</NavLink>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
               {/* USEFUL LINK */}
-              <div className="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-6 col">
+              {/* <div className="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-6 col">
                 <div className="widget widget_services">
                   <h4 className="sx-f-title">Useful Links</h4>
                   <ul>
@@ -105,7 +110,7 @@ function Footer() {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
               {/* SOLUTIONS */}
               <div className="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-12 col footer-col-3">
                 <div className="widget widget_info">
