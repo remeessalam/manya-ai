@@ -91,7 +91,10 @@ function ContactUsPage() {
                           <Link to="#" className="sx-icon-bx-title-info">
                             Contact Phone
                           </Link>
-                          <Link to="#" className="sx-icon-bx-title">
+                          <Link
+                            to={`tel:${companyDetails.phone1}`}
+                            className="sx-icon-bx-title"
+                          >
                             {companyDetails.phone1}
                           </Link>
                         </div>
@@ -106,7 +109,10 @@ function ContactUsPage() {
                           <Link to="#" className="sx-icon-bx-title-info">
                             Contact Mail
                           </Link>
-                          <Link to="#" className="sx-icon-bx-title">
+                          <Link
+                            to={`mailto:${companyDetails.email}`}
+                            className="sx-icon-bx-title"
+                          >
                             {companyDetails.email}
                           </Link>
                         </div>

@@ -60,7 +60,9 @@ function Footer() {
                     </div>
                     <div className="sx-f-call-section">
                       <span>Contact us 24/7</span>
-                      <a href="tel:+55(990)66622">{companyDetails.phone1}</a>
+                      <a href={`tel:${companyDetails.phone1}`}>
+                        {companyDetails.phone1}
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -121,17 +123,24 @@ function Footer() {
                         <i className="flaticon-phone" />
                       </div>
                       <div className="widget-info-detail">
-                        <a href="tel:+55(66633)2566">{companyDetails.phone1}</a>
-                        <a href="tel:+55(66633)2577">{companyDetails.phone2}</a>
+                        <a href={`tel:${companyDetails.phone1}`}>
+                          {companyDetails.phone1}
+                        </a>
+                        <a href={`tel:${companyDetails.phone2}`}>
+                          {companyDetails.phone2}
+                        </a>
                       </div>
                     </li>
                     <li>
                       <div className="widget-info-icon">
                         <i className="flaticon-email" />
                       </div>
-                      <div className="widget-info-detail">
+                      <a
+                        href={`mailto:${companyDetails.email}`}
+                        // className="widget-info-detail"
+                      >
                         <p>{companyDetails.email}</p>
-                      </div>
+                      </a>
                     </li>
                     <li>
                       <div className="widget-info-icon">
