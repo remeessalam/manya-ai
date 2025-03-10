@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import ItodoImage from "../../elements/itodo-img";
 import { companyDetails } from "../../../constant";
 
@@ -60,9 +60,9 @@ function Footer() {
                     </div>
                     <div className="sx-f-call-section">
                       <span>Contact us 24/7</span>
-                      <a href={`tel:${companyDetails.phone1}`}>
+                      <Link to={`tel:${companyDetails.phone1}`}>
                         {companyDetails.phone1}
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -123,12 +123,12 @@ function Footer() {
                         <i className="flaticon-phone" />
                       </div>
                       <div className="widget-info-detail">
-                        <a href={`tel:${companyDetails.phone1}`}>
+                        <Link to={`tel:${companyDetails.phone1}`}>
                           {companyDetails.phone1}
-                        </a>
-                        <a href={`tel:${companyDetails.phone2}`}>
+                        </Link>
+                        <Link to={`tel:${companyDetails.phone2}`}>
                           {companyDetails.phone2}
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
